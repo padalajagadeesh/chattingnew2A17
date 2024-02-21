@@ -1,0 +1,9 @@
+<div class="chessBoard">
+    @for (title of data; track title;let i = $index) {
+    <div>
+        @for (item of title; track item; let j = $index) {
+            <div (click)="iconClick(item,i,j)"> <i class="fas fa-chess" [innerHTML]="item" > </i> </div>
+            }
+    </div>
+    }
+</div>

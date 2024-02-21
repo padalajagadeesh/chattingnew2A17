@@ -1,0 +1,23 @@
+HOME
+<h1>ANGULAR 17</h1>
+  
+  <ul>
+    @for (title of data; track title.name) {
+        <li>{{title.name}}</li>
+    }  @empty {
+        Empty list of users
+    }
+  </ul>
+  <div>
+    @for (title of data; track title.name) {
+        <div>{{title.role}}***</div>
+    }
+    
+  </div>
+  <div>
+    @if (!value) {
+        The user is logged in
+      } @else {
+        The user is not logged in
+      }
+  </div>

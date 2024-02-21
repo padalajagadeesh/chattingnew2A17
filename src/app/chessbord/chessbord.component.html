@@ -1,0 +1,10 @@
+<div class="chessboard">
+    @for (row of board; track row){
+    @for (square of row; track square){
+    <div>{{ square }}</div>
+    }
+    }
+    <!-- <div *ngFor="let row of board" class="row">
+      <div *ngFor="let square of row" class="square">{{ square }}</div>
+    </div> -->
+</div>

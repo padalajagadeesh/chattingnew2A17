@@ -1,0 +1,34 @@
+.chessBoard {
+    margin: auto;
+    width: 600px;
+    background-color: #eeeed2;
+    >div {
+        display: flex;
+        &:nth-child(even) {
+            >div {
+                &:nth-child(odd) {
+                    background-color: #769656;
+                }
+            }
+        }
+        &:nth-child(odd) {
+            >div {
+                &:nth-child(even) {
+                    background-color: #769656;
+                }
+            }
+        }
+        >div {
+            width: 75px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+                font-size: 50px;
+                font-style: normal;
+                height: inherit;
+            }
+        }
+    }
+}
